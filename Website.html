@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Garcia</title>
+    <link rel="stylesheet" href="Assets\Website.css">
+</head>
+<body>
+
+    <header>
+        <h1>Phoenix Garcia</h1>
+    </header>
+
+    <nav>
+        <a onclick="showTab('aboutme')">About Me</a>
+        <a onclick="showTab('resume')">Resume</a>
+        <a onclick="showTab('workexperience')">Work Experience</a>
+        <a onclick="showTab('projects')">Projects</a>
+        <a onclick="showTab('awards')">Awards</a>
+        <a onclick="showTab('links')">Links and Contact</a>
+    </nav>
+
+    <main>
+        <!-- Content for the home page -->
+        <section id="aboutme" class="tab-content active">
+            <h2 style="text-align:center;">About Me<br> </h2>
+            <div class="container">
+                <img src="Assets\phoenix.jpg" alt="Professional Picture" width="300">
+            </div>
+            <p>I am a Software Engineering undergraduate with a minor in 'Software Development 
+                for the Mining Industry' seeking a summer internship for 2024. 
+                I have a particular interest in Data Engineering, Autonomous Systems, and Software Security. 
+                I'm looking to explore the software industry and see where my skills can be applied.</p>
+                <br>
+            <p>When I first became a student at the University of Arizona, I chose to study Mining Engineering with a minor in Softawre Engineering. I was 
+                enamored with the giant machines that are involved in the mining industry and I wanted to be involved in making and programming them. 
+                To me, the mining industry is always on the front line of innovation in automation and robotics.
+                This was my plan until I had the opportunity to work as a mining engineering intern. Even though this position was a positive eperience, I came 
+                to realize that my plan of study would not let me achieve my goals of developing tools for the mining industry. As of Fall 2023, I'm happy to say 
+                I've found the Software Engineering degree to be a good fit for me.</p>
+                <br>
+            <p>I've spent my time at the Univerisity of Arizona working with Dr. Nathalie Risso in the Mine Automation and Autonomous Systems Laboratory.
+                Here, I've worked to develop educational material for mining undergraduates on how to program drones for use in the mining industry. This coming semester 
+                I will be working to create a simulation of a mineral processing operation to give these undergraduates experience in making operational decisions
+                in mineral processing and exposure to the uses of data infrastructure in the mining industry. 
+            </p>
+            <br>      
+        </section>
+
+        <!-- Content for the about page -->
+        <section id="resume" class="tab-content">
+            <h2 style="text-align: center;">Resume</h2>
+            <div class="container">
+                <iframe src="Assets\Resume.pdf" width="100%" height="800" ></iframe>
+            </div>
+            
+        </section>
+
+        <!-- Content for the services page -->
+        <section id="workexperience" class="tab-content">
+            <h2>Work Experience</h2>
+            <h3>Undergraduate Research, Mine Automation and Autonomous Systems Laboratory</h3>
+            <p>In the MAAS lab, my purpose is both to develop technologies for the mining industry and to progress my education in software and mining. In the spring of 2023, I worked to create educational materials on UGV and drones for undergraduate mining engineers. In the fall of 2023, I will work on two projects. First, I will use IDEAS by Andritz to create a digital twin of a mineral processing plant for the UArizona simulation control room. Second, I will use machine learning to identify PPE in mining pictures. 
+                <br><br>•	Recorded 9 videos of drone tutorials. Topics included: set-up, programming, an open-ended question, and a solution. 
+                <br>•	Programmed a drone to fly a routine, fly with keyboard control, and track a face using python and the OpenCV library.
+                </p>
+            <h3>Metallurgical Engineer Intern, Nevada Gold Mines</h3>
+            <p>My summer as a metallurgical intern was split between my intern project and side projects. My main project was conducting a roaster oxygen flow trial. I’d sample ore, process the ore in the metallurgical lab, and analyze the results. Based on my data, I suggested reducing the oxygen flow to the roaster to increase gold recovery. On the side, I worked to optimize daily and weekly reporting excel sheets. I changed SQL queries from static to dynamic, I coded a function in VBS to create charts with daily updating axis, and I wrote SQL queries to import data that was previously hand entered. 
+                <br><br>•	Intern project voted to be top 20 intern projects of 90 interns, and top 5 of metallurgical interns. 
+                <br>•	Discovered a trend between residue arsenic and residue gold that suggests lower oxygen flow rates will increase recoveries. 
+                <br>•	Reduce data refresh time of reports from ~10 minutes to ~1 minute. Saved my boss’s time and patience. 
+                </p>
+            <h3>Math Tutor, University of Arizona</h3>
+            <p>•	Tutored students in both one-on-one and group environment on Algebra and Calculus concepts to supplement lectures. 
+                <br>•	Coordinated with other tutors to ensure the best experience for the students.
+                </p>
+        </section>
+
+        <!-- Content for the contact page -->
+        <section id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <h3>GUI for Scholarship Management Service</h3>
+            <div class="container"><video width="640" height="360" controls>
+                <source src="Assets\GUIDemo.mp4" type="video/mp4">
+                Your browser does not support this video.
+             </video>
+            </div>
+            <p>My team was tasked with deriving the software requirements for and implementing a subsystem of a mock 'Univeristy of Arizona Scholarship Application Management System' (UASAMS).
+                First, we captured the whole system in a series of diagrams and derived requirements for various subsystems of the UASAMS. 
+                We used <span class="highlight">Jama</span> to keep track of our requirements through this process</p>
+            <p>My team members and I chose to develop the Front-End GUI for the UASAMS. We used tools for <span class="highlight">Java</span> including <span class="highlight">JavaFX</span>, <span class="highlight">Scene Builder</span>, and <span class="highlight">GitHub</span>
+            to complete the project. I personally created the GUIs for four of our user types, with a focus on meeting the different requirements established in our elicitation.
+            In writing this project I learned how to use <span class="highlight">anonymous inner classes</span>, <span class="highlight">singletons</span>, and <span class="highlight">lambda expressions</span>.</p>
+
+            <h3>'Good Cities' Relational Database</h3>
+            <div class="container">
+                    <img src="Assets\schema.PNG" alt="A picture of a relational database that connects city walkability data to climate data to evaluate the desirability of a city." width="80%">
+            </div>
+            <p>I'm unsure of what city I'd like to move to when I graduate, but I know that I want a walkable city thats colder and wetter than Tucson. This motivated me to 
+                create a relational database that would let me query different climate and walkability metrics to return different locations in the US. In a jupyter notebook 
+                I developed an <span class="highlight">ETL</span> pipeline to extract data from the Smart Location Database and the NCEI Climate Database. </p>
+            <p>I explored this data, and cleaned out rows and columns that would not be in the scope of my RDB. Then, I transformed the data to fit together through zipcode databases from the United States Postal Service.
+                Then, I uploaded this RDB to <span class="highlight">Amazon Web Services</span> and ran some test queries.</p>
+            <p>This project taught me about using python's <span class="highlight">pandas</span> for handling large amounts of data, how to work with <span class="highlight">AWS</span>, and <span class="highlight">relational database design</span>.</p>
+            <p>You can check out the jupyter notebook here: <a href="https://colab.research.google.com/drive/1CxJRv0oJCxetP5FZphdCOTXRBBL-WF4S?usp=sharing" target="_blank">Link</a> </p>
+            
+            <h3>Personal Website</h3>
+            <div class="container">
+                <img src="Assets\website.PNG" alt="A picture of a relational database that connects city walkability data to climate data to evaluate the desirability of a city." width="80%">
+            </div>
+            <p>Big surprise! This website is also one of my personal projects.</p>
+            <p>Since I'm a newcomer to Software Engineering, I wanted to really set myself apart by creating a professional website for myself. This project is a work to develop my <span class="highlight">professional communication skills</span>, my <span class="highlight">web development skills</span>, and my <span class="highlight">self motivation</span>.</p>
+            <p>I've really enjoyed putting this together, and have plans to add new features such as: information that pops up when hovering over key words, a games section, and more javascript. </p>
+        </section>
+
+        <!-- Content for the blog page -->
+        <section id="awards" class="tab-content">
+            <h2>Awards</h2>
+            <h3>Boy Scouts of America</h3>
+            <div class="indent">Eagle Scout</div>
+            <h3>Nevada Gold Mines</h3>
+            <div class="indent">Voted top 20 intern project presentation</div>
+            <div class="indent">Voted top 5 metallurgical intern project presentation</div>
+            <h3>University of Arizona</h3>
+            <div class="indent">National Merit Hispanic Scholar</div>
+            <div class="indent">Academic Year Highest Academic Distinction, Spring 2023</div>
+            <div class="indent">Dean's List With Distinction, Spring 2023</div>
+            <div class="indent">Academic Year Academic Distinction, Spring 2022</div>
+            <div class="indent">Dean's List With Distinction, Spring 2022</div>
+            <div class="indent">Dean's List, Fall 2021</div>
+
+            <h2>Leadership</h2>
+            <h3>Software Engineering Wildcats</h3>
+            <div class="indent">Secretary, 2023-2024</div>
+            <h3>UArizona Women In Mining</h3>
+            <div class="indent">Treasurer, 2023-2024</div>
+        </section>
+
+        <!-- Content for the links page -->
+        <section id="links" class="tab-content">
+            <h2>Links</h2>
+            <a href="https://github.com/phoenixrgarcia" target="_blank">GitHub</a>
+            <br>
+            <a href="www.linkedin.com/in/phoenix-garcia" target="_blank">LinkedIn</a>
+            <br>
+            <a href="Website.html" target="_blank">Website</a>
+            <br>
+
+            <h2>Contact</h2>
+            <p>Email: garciap2@arizona.edu</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p style="color:white">&copy; 2023 Phoenix Garcia. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Show the selected tab
+            const selectedTab = document.getElementById(tabId);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

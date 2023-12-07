@@ -1,0 +1,102 @@
+:root {
+    --main-blue: #3498db;   /* Main blue color */
+    --dark-blue: #2980b9;   /* Slightly darker shade for depth */
+    --light-blue: #7f8c8d;  /* Lighter shade for highlights */
+    --accent-yellow: #f39c12; /* Accent color, e.g., for call-to-action buttons */
+    --accent-green: #2ecc71;  /* Another accent color, e.g., for success messages */
+  }
+
+.container {
+    text-align: center;
+}
+
+.highlight {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.indent {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+header {
+    background-color: var(--main-blue);;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 50px;
+    color: #2c3e50; 
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+img {
+    margin: 0 auto;
+    display: block; /* This ensures the margin works properly */
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+}
+
+footer {
+    background-color: var(--dark-blue);
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white !important;
+    clear: both;
+}
